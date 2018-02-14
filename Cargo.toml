@@ -1,0 +1,19 @@
+[package]
+name = "bitcoin-diffest"
+version = "0.1.0"
+authors = ["Tamas Blummer <tamas.blummer@gmail.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/tamasblummer/bitcoin-diffest/"
+repository = "https://github.com/tamasblummer/bitcoin-diffest/"
+description = "Estimate next Bitcoin mining difficulty"
+keywords = [ "crypto", "bitcoin", "mining", "difficulty" ]
+readme = "README.md"
+
+[dependencies]
+# this could be replaced with 
+# bitcoin = "0.10.7"
+# provided PRs #44 is merged into https://github.com/apoelstra/rust-bitcoin
+# in the meanwhile clone my fork https://github.com/tamasblummer/rust-bitcoin
+# into a parallel directory
+bitcoin = { path = "../rust-bitcoin" }
+num = "0.1"
