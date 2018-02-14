@@ -13,13 +13,15 @@ The output on stdout is a csv file with following field:
 - next difficulty estimate - this changes with every block and converges at low volatility to network difficulty
 
 ## Build instructions
-Need
+Need:
 - rust 1.23 or higher, get it fom https://www.rust-lang.org/en-US/
 - clone https://github.com/tamasblummer/rust-bitcoin into a directory parallel to the one you cloned this repo. This requirement mit go away as soon as https://github.com/apoelstra/rust-bitcoin
 merges https://github.com/apoelstra/rust-bitcoin/pull/44
+
+Build:
 - cargo build --release
 
-run it as:
+Run:
 
 target/release/bitcoin-diffest > difftest.txt
 
@@ -27,4 +29,8 @@ It should take ca 10 minutes if built as above for release running on an Intel i
 at block height of 508829.
 
 I checked in a run result for those curious how it looks like before running it with real time data.
+
+Above example result visualized for last blocks:
+
+![difficulty chart](src/difficulty.png)
 
