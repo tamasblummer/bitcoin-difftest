@@ -15,8 +15,6 @@ The output on stdout is a csv file with following field:
 ## Build instructions
 Need:
 - rust 1.23 or higher, get it fom https://www.rust-lang.org/en-US/
-- clone https://github.com/tamasblummer/rust-bitcoin into a directory parallel to the one you cloned this repo. This requirement mit go away as soon as https://github.com/apoelstra/rust-bitcoin
-merges https://github.com/apoelstra/rust-bitcoin/pull/44
 
 Build:
 - cargo build --release

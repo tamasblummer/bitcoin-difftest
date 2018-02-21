@@ -15,5 +15,5 @@ readme = "README.md"
 # provided PRs #44 is merged into https://github.com/apoelstra/rust-bitcoin
 # in the meanwhile clone my fork https://github.com/tamasblummer/rust-bitcoin
 # into a parallel directory
-bitcoin = { path = "../rust-bitcoin" }
+bitcoin = "0.10.9"
 num = "0.1"
